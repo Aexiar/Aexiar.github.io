@@ -13,5 +13,6 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: 'Python', link: 'https://aexiar.github.io/python/notes/' },
     ]
   },
+  { text: '数据库', link: 'https://aexiar.github.io/db/notes/' },
   { text: '开源软件', link: 'https://aexiar.github.io/open-software/notes/' },
 ]
