@@ -15,6 +15,7 @@ export default defineConfig({
   description: "许大仙前端、Java、大数据、云原生",
   head: [ // favicon.ico 图标等
     ['link', { rel: "shortcut icon", href: `${VITE_BASE_URL}/logo.svg` }],
+    ['link', { rel: "icon", href: `${VITE_BASE_URL}/logo.svg` }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     [
       'link',
