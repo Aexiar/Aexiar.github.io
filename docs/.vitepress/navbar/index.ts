@@ -4,7 +4,7 @@ export const nav: DefaultTheme.NavItem[] = [
   { text: '计组6件套', link: '/coa6/notes/' },
   {
     text: '编程语言', items: [
-      { text: 'c/c++', link: '/c/notes/' },
+      { text: 'c/c++', link: '/c/notes/' ,target: '_blank' },
       { text: '前端', link: '/web-design/notes/' },
       { text: 'Java', link: '/java/notes/' },
       { text: '大数据', link: '/big-data/notes/' },
