@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/' },
-  { text: '计组6件套', link: 'https://aexiar.github.io/coa6/notes/' },
+  { text: '计组6件套', link: '/coa6/notes/' },
   {
     text: '编程语言', items: [
       { text: 'c/c++', link: 'https://aexiar.github.io/c/notes/' },
