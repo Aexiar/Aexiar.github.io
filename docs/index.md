@@ -20,8 +20,8 @@ head:
       content: 许大仙,许大仙的博客
 
 hero:
-  name: "许大仙同学"
-  text: ""
+  name: "计算机知识"
+  text: "大、全、细"
   tagline: "『这个世纪疯狂，没人性，腐败；你却一直清醒，温柔，一尘不染。』"
   image:  # text 和 tagline 区域旁的图片
     src: /logo.svg
@@ -85,6 +85,7 @@ features:
     details: "注意事项就这么几点：边界值、等价类、数据完整性原子性、死锁、空转、……"
 ---
 
-
+<confetti />
+<HomeUnderline />
 
 
