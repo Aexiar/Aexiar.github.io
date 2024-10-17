@@ -1,5 +1,6 @@
 @import './vp-code.css';
 @import './vp-code-group.css';
-@import './blockquote.css';
+@import './blockquote-no-sfx.css';
 @import './var.css';
+@import './blur.css';
 @import './rainbow.css';
