@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './navbar'
 import dayjs from 'dayjs'
+import timeline from "vitepress-markdown-timeline"
 
 import { loadEnv } from 'vite'
 const mode = process.env.NODE_ENV || 'development'
@@ -40,7 +41,38 @@ export default defineConfig({
     }
   },
   markdown: { // markdown 配置
+    math: true,
     lineNumbers: true, // 行号显示
+    image: {
+      // 开启图片懒加载
+      lazyLoading: true
+    },
+    // 组件插入h1标题下
+    config: (md) => {
+      // 创建 markdown-it 插件
+      md.use((md) => {
+        const defaultRender = md.render
+        md.render = function (...args) {
+          const [content, env] = args
+          const isHomePage = env.path === '/' || env.relativePath === 'index.md'  // 判断是否是首页
+
+          if (isHomePage) {
+            return defaultRender.apply(md, args) // 如果是首页，直接渲染内容
+          }
+          // 调用原始渲染
+          let defaultContent = defaultRender.apply(md, args)
+          // 替换内容
+          defaultContent = defaultContent.replace(/NOTE/g, '提醒')
+            .replace(/TIP/g, '建议')
+            .replace(/IMPORTANT/g, '重要')
+            .replace(/WARNING/g, '警告')
+            .replace(/CAUTION/g, '注意')
+          // 返回渲染的内容
+          return defaultContent
+        }
+      })
+      md.use(timeline)
+    }
   },
   themeConfig: {// 主题设置
     lastUpdatedText: '上次更新', // 上次更新显示文本
