@@ -1,16 +1,17 @@
 {
-  "name": "blog",
+  "name": "aurorxa",
   "version": "1.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs --mode development",
+    "docs:dev": "vitepress dev docs --mode development --host",
     "docs:build": "vitepress build docs --mode production",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@types/dom-view-transitions": "^1.0.5",
     "@types/node": "^22.9.2",
