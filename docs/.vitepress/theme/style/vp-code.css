@@ -35,11 +35,8 @@
   right: 0;
   border-right: 1px solid var(--vp-code-block-divider-color);
   height: calc(100% - 60px);
-<<<<<<< HEAD
 }
 
 .vp-doc div[class*='language-'].line-numbers-mode {
     margin-bottom: 20px;
-=======
->>>>>>> e1f41a40ade3350da2d9a41c755240b15d71c75f
 }
